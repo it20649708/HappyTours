@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "225072340868",
+    "project_id": "happytours-c4e1a",
+    "storage_bucket": "happytours-c4e1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225072340868:android:42f43dec8ae856860587d1",
+        "android_client_info": {
+          "package_name": "com.example.happytours"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225072340868-c26pq5in46h2qsegv9ievqocc7offqs5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4wHOrvj2J06L0jQrjqTiyvQ7_obzjq2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225072340868-c26pq5in46h2qsegv9ievqocc7offqs5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

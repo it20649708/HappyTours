@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">HaPpy Tours</string>
+    <string name="st_01">Nalintha Rentals</string>
+    <string name="nalintha_rentals">Nalintha Rentals</string>
+    <string name="todo1">TODO</string>
+    <string name="img_1">image1</string>
+    <string name="Nalintha_rentals">Nalintha_rentals</string>
+    <string name="st_2">Nugegoda</string>
+    <string name="st_3">071 3420950</string>
+    <string name="nugegoda">Nugegoda</string>
+    <string name="Nugegoda">Nugegoda</string>
+    <string name="st_4">+9171 3420950</string>
+    <string name="quentity">quentity</string>
+    <string name="no_of_days">no of days</string>
+    <string name="date_to_be_recieved">Date to be recieved</string>
+    <string name="nic">NIC</string>
+    <string name="name">name</string>
+    <string name="submit" tools:ignore="DuplicateDefinition">Make Reservation</string>
+    <string name="textview1">TextView</string>
+    <string name="textview2">TextView</string>
+    <string name="textview3">TextView</string>
+    <string name="todo2">TODO</string>
+    <string name="confirm">Confirm</string>
+    <string name="todo">image1</string>
+    <string name="textview">st_text1</string>
+    <string name="openSecond">openSecond</string>
+    <string name="make_reservation">Make Reservation</string>
+</resources>
