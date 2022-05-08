@@ -20,9 +20,23 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+<<<<<<< HEAD
             android:name=".ViewReservation"
+=======
+            android:name=".foodordermain"
+            android:exported="false" />
+        <activity
+            android:name=".FoodList"
+            android:exported="false" />
+        <activity
+            android:name=".foodAdd"
+            android:exported="false"/>
+        <activity
+            android:name=".AddReservation"
+>>>>>>> origin/master
             android:exported="true"
             tools:ignore="MissingClass">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

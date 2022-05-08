@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".foodAdd">
+
+    <TextView
+        android:id="@+id/txtFoodname"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/tvFoodname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextFoodName"
+        android:layout_width="156dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="@string/htFoodname"
+        android:inputType="textPersonName"
+        android:textColorHint="#78909C"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtFoodname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toEndOf="@+id/txtFoodname"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/txtFoodcategory"
+        android:layout_width="165dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/tvCategoy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFoodname" />
+
+    <Spinner
+        android:id="@+id/dropCategory"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/ctDEsc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtFoodcategory"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextFoodName"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="158dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/tvPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFoodcategory" />
+
+    <TextView
+        android:id="@+id/txtportion"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/tvportion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrice" />
+
+    <Spinner
+        android:id="@+id/dropPortion"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/ctDEsc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextFoodPrice" />
+
+    <TextView
+        android:id="@+id/txtShop"
+        android:layout_width="147dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/tvShop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtportion" />
+
+    <EditText
+        android:id="@+id/editTextTextRestaurantName"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="@string/htShop"
+        android:inputType="textPersonName"
+        android:textColorHint="#78909C"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtShop"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="141dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/tvCity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtShop" />
+
+    <EditText
+        android:id="@+id/editTextTextCity"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/htCity"
+        android:inputType="textPersonName"
+        android:textColorHint="#78909C"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAdd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/viewbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextCity" />
+
+    <Button
+        android:id="@+id/viewbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:text="@string/viewbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextCity" />
+
+    <EditText
+        android:id="@+id/editTextTextFoodPrice"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:hint="@string/htPrice"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPrice"
+        app:layout_constraintStart_toEndOf="@+id/txtPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
