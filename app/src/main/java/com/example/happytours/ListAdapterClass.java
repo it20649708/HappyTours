@@ -58,7 +58,7 @@ public class ListAdapterClass extends RecyclerView.Adapter<RecyclerView.ViewHold
             super(itemView);
             tv_name=itemView.findViewById(R.id.st_01);
             tv_city=itemView.findViewById(R.id.st_2);
-            tv_phone=itemView.findViewById(R.id.st_3);
+            tv_phone=itemView.findViewById(R.id.st_2);
             img_photo=itemView.findViewById(R.id.img_1);
 
 

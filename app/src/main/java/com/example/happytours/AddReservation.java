@@ -1,6 +1,7 @@
 package com.example.happytours;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -68,7 +69,9 @@ public class AddReservation extends AppCompatActivity {
 
                 databaseReference.push().setValue(vehicleobj);
 
-                Toast.makeText(getApplicationContext(),"Reservation Successfully",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Reservation Successfully",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(AddReservation.this, ViewReservation.class);
+                startActivity(intent);
 
 
 
@@ -80,3 +83,13 @@ public class AddReservation extends AppCompatActivity {
 
 
 }
+
+
+
+
+
+
+
+
+
+
