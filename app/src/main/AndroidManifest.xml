@@ -17,9 +17,19 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+            android:name=".foodordermain"
+            android:exported="false" />
+        <activity
+            android:name=".FoodList"
+            android:exported="false" />
+        <activity
+            android:name=".foodAdd"
+            android:exported="false"/>
+        <activity
             android:name=".AddReservation"
             android:exported="true"
             tools:ignore="MissingClass">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

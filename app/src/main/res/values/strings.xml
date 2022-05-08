@@ -25,4 +25,23 @@
     <string name="textview">st_text1</string>
     <string name="openSecond">openSecond</string>
     <string name="make_reservation">Make Reservation</string>
+    <string name="tvFoodname">Enter Food Name</string>
+    <string name="htFoodname">Food name</string>
+    <string name="tvCategoy">Food Category</string>
+    <string name="tvPrice">Price</string>
+    <string name="htPrice">Price</string>
+    <string name="tvportion">Portion</string>
+    <string name="ctDEsc">NULL</string>
+    <string name="tvShop">Restaurant Name</string>
+    <string name="htShop">Restaurant Name</string>
+    <string name="tvCity">Located City</string>
+    <string name="htCity">City Name</string>
+    <string name="btnAdd">ADD</string>
+    <string name="viewbtn">View Food</string>
+    <string name="tvname">Name</string>
+    <string name="foodname">Food Name :</string>
+    <string name="rupee">Rs.</string>
+    <string name="portionname">"Portion : "</string>
+    <string name="btn_order">Order Now</string>
+    <string name="Txt1">Find The Best Food Around You</string>
 </resources>
