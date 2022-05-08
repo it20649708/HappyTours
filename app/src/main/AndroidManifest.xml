@@ -11,13 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HaPpyTours">
         <activity
-            android:name=".ViewReservation"
+            android:name=".vehicleShops"
+            android:exported="false" />
+        <activity
+            android:name=".AddReservation"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".AddReservation"
+            android:name=".ViewReservation"
             android:exported="true"
             tools:ignore="MissingClass">
             <intent-filter>

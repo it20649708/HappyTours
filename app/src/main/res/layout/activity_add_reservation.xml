@@ -24,37 +24,41 @@
             android:contentDescription="@string/todo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/image1" />
+            app:srcCompat="@drawable/safari" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="112dp"
-            android:text="@string/textview"
+            android:layout_marginStart="76dp"
+            android:text="Vehicle name"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.649" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="61dp"
             android:layout_height="20dp"
             android:layout_marginEnd="100dp"
-            android:text="@string/textview"
+            android:text="Vehicle Colour"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.991"
+            app:layout_constraintHorizontal_bias="0.699"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.562" />
+            app:layout_constraintVertical_bias="0.583" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="104dp"
-            android:text="@string/textview"
+            android:text="Vehicle Status"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -161,16 +165,7 @@
             android:onClick="add"
             android:text="@string/make_reservation"/>
 
-        <Button
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:onClick="view"
-            android:text="View Reservation"
-            tools:ignore="OnClick" />
+
 
 
     </LinearLayout>

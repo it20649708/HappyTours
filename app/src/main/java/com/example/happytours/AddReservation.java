@@ -47,7 +47,6 @@ public class AddReservation extends AppCompatActivity {
     }
     public void add(View view){
         databaseReference = FirebaseDatabase.getInstance().getReference().child("vehicle");
-
         try {
             if (TextUtils.isEmpty(name.getText().toString())) {
                 Toast.makeText(getApplicationContext(), "please enter name", Toast.LENGTH_SHORT).show();
@@ -58,23 +57,14 @@ public class AddReservation extends AppCompatActivity {
             }else if(TextUtils.isEmpty(days.getText().toString())) {
                 Toast.makeText(getApplicationContext(), "please enter name", Toast.LENGTH_SHORT).show();
             }else{
-
                 vehicleobj.setName(name.getText().toString().trim());
                 vehicleobj.setNic(nic.getText().toString().trim());
                 vehicleobj.setQuentity(Integer.parseInt(quentity.getText().toString().trim()));
                 vehicleobj.setDays(Integer.parseInt(days.getText().toString().trim()));
-
-
-
-
                 databaseReference.push().setValue(vehicleobj);
-
                 Toast.makeText(getApplicationContext(),"Reservation Successfully",Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(AddReservation.this, ViewReservation.class);
                 startActivity(intent);
-
-
-
             }
         } catch (NumberFormatException e) {
             Toast.makeText(getApplicationContext(),"Invalid Number Format", Toast.LENGTH_SHORT).show();
