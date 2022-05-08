@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="button" type="id">NEXT</item>
+    <item name="nic" type="id" />
+    <item name="checkindate" type="id" />
+    <item name="checkintime" type="id" />
+    <item name="checkoutdate" type="id" />
+    <item name="checkouttime" type="id" />
+    <item name="noofadults" type="id" />
+    <item name="noofchildren" type="id" />
+    <item name="noofrooms" type="id" />
+    <item name="noofrooms" type="id" />
+</resources>
