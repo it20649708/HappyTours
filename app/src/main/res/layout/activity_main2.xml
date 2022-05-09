@@ -13,7 +13,7 @@
         android:id="@+id/register_form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BOOKING FORM (part 1)"
+        android:text="BOOKING FORM (part 2)"
         android:textSize="25dp"
         android:textStyle="bold"
         android:gravity="center"
@@ -21,77 +21,46 @@
         android:textColor="@color/black"
 
         />
-    
+
     <EditText
-        android:id="@+id/firstname"
+        android:id="@+id/checkOutTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="FirstName"
+        android:hint="CheckOutTime"
         android:layout_marginTop="20dp"
         />
 
     <EditText
-        android:id="@+id/lastname"
+        android:id="@+id/NoOfAdults"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="LastName"
+        android:hint="NoOfAdults"
         android:layout_marginTop="20dp"
         />
 
     <EditText
-        android:id="@+id/mobile"
+        android:id="@+id/NoOfChildren"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="MobileNumber"
+        android:hint="NoOfChildren"
         android:layout_marginTop="20dp"
         />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/NoOfRooms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
-        android:layout_marginTop="20dp"
-        />
-
-    <EditText
-        android:id="@+id/NICno"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="NICNumber"
-        android:layout_marginTop="20dp"
-        />
-
-    <EditText
-        android:id="@+id/CheckInDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="CheckInDate"
-        android:layout_marginTop="20dp"
-        />
-
-    <EditText
-        android:id="@+id/CheckInTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="CheckInTime"
-        android:layout_marginTop="20dp"
-        />
-
-    <EditText
-        android:id="@+id/CheckOutDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="CheckOutDate"
+        android:hint="NoOfRooms"
         android:layout_marginTop="20dp"
         />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/next"
-        android:text="NEXT"
+        android:id="@+id/Confirm"
+        android:text="CONFIRM"
         android:backgroundTint="@color/black"
         />
+
 
 </LinearLayout>
