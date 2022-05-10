@@ -44,4 +44,7 @@
     <string name="portionname">"Portion : "</string>
     <string name="btn_order">Order Now</string>
     <string name="Txt1">Find The Best Food Around You</string>
+    <string name="safari">Safari</string>
+    <string name="vehicle_categeory">Vehicle Categeory</string>
+    <string name="Here">Button</string>
 </resources>

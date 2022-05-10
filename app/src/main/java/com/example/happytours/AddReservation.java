@@ -40,39 +40,50 @@ public class AddReservation extends AppCompatActivity {
         quentity = findViewById(R.id.quentity);
         days = findViewById(R.id.noOfDays);
         date = findViewById(R.id.editTextDate);
-        add = findViewById(R.id.add);
+        add = (Button)findViewById(R.id.add);
+
 
         vehicleobj = new vehicle();
 
-    }
-    public void add(View view){
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("vehicle");
-        try {
+
+        add.setOnClickListener(v -> {
+
+
+            databaseReference = FirebaseDatabase.getInstance().getReference().child("vehicle");
+
+
             if (TextUtils.isEmpty(name.getText().toString())) {
-                Toast.makeText(getApplicationContext(), "please enter name", Toast.LENGTH_SHORT).show();
-            }else if(TextUtils.isEmpty(nic.getText().toString())) {
-                Toast.makeText(getApplicationContext(), "please enter name", Toast.LENGTH_SHORT).show();
-            }else if(TextUtils.isEmpty(quentity.getText().toString())) {
-                Toast.makeText(getApplicationContext(), "please enter name", Toast.LENGTH_SHORT).show();
-            }else if(TextUtils.isEmpty(days.getText().toString())) {
-                Toast.makeText(getApplicationContext(), "please enter name", Toast.LENGTH_SHORT).show();
-            }else{
+                Toast.makeText(getApplicationContext(), "please enter Name", Toast.LENGTH_SHORT).show();
+            } else if (TextUtils.isEmpty(nic.getText().toString())) {
+                Toast.makeText(getApplicationContext(), "please enter Nic", Toast.LENGTH_SHORT).show();
+            } else if (TextUtils.isEmpty(quentity.getText().toString())) {
+                Toast.makeText(getApplicationContext(), "please enter Quentity", Toast.LENGTH_SHORT).show();
+            } else if (TextUtils.isEmpty(days.getText().toString())) {
+                Toast.makeText(getApplicationContext(), "please enter Days", Toast.LENGTH_SHORT).show();
+            } else {
                 vehicleobj.setName(name.getText().toString().trim());
                 vehicleobj.setNic(nic.getText().toString().trim());
                 vehicleobj.setQuentity(Integer.parseInt(quentity.getText().toString().trim()));
                 vehicleobj.setDays(Integer.parseInt(days.getText().toString().trim()));
                 databaseReference.push().setValue(vehicleobj);
-                Toast.makeText(getApplicationContext(),"Reservation Successfully",Toast.LENGTH_LONG).show();
+
+                Toast.makeText(AddReservation.this, "Reservation Successfully", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(AddReservation.this, ViewReservation.class);
                 startActivity(intent);
+
             }
-        } catch (NumberFormatException e) {
-            Toast.makeText(getApplicationContext(),"Invalid Number Format", Toast.LENGTH_SHORT).show();
+
+        });
         }
+
+
     }
 
 
-}
+
+
+
+
 
 
 

@@ -3,27 +3,28 @@ package com.example.happytours;
 public class shops {
 
 
-    int image;
-    String vNmae;
+    int vimage;
+    String vName;
 
-    public shops(int image, String vNmae) {
-        this.image = image;
-        this.vNmae = vNmae;
+    public shops(int image, String vName) {
+        this.vimage = image;
+        this.vName = vName;
     }
 
-    public int getImage() {
-        return image;
+    public int getVimage() {
+        return vimage;
     }
 
-    public void setImage(int image) {
-        this.image = image;
+    public void setVimage(int vimage) {
+        this.vimage = vimage;
     }
 
-    public String getvNmae() {
-        return vNmae;
+    public String getvName() {
+
+        return vName;
     }
 
-    public void setvNmae(String vNmae) {
-        this.vNmae = vNmae;
+    public void setvName(String vName) {
+        this.vName = vName;
     }
 }

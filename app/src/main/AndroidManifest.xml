@@ -11,32 +11,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HaPpyTours">
         <activity
+            android:name=".VehicleItem"
+            android:exported="false" />
+        <activity
+            android:name=".sales"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".vehicleShops"
             android:exported="false" />
         <activity
             android:name=".AddReservation"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-<<<<<<< HEAD
             android:name=".ViewReservation"
-=======
-            android:name=".foodordermain"
             android:exported="false" />
         <activity
-            android:name=".FoodList"
-            android:exported="false" />
-        <activity
-            android:name=".foodAdd"
-            android:exported="false"/>
-        <activity
-            android:name=".AddReservation"
->>>>>>> origin/master
+            android:name=".Home"
             android:exported="true"
             tools:ignore="MissingClass">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

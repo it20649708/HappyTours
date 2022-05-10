@@ -7,11 +7,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.ConditionVariable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 List1AdapterClass list1AdapterClass;
 ArrayList<modelClass> mData;
 RecyclerView recyclerView;
-
+    private Button button1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +29,22 @@ RecyclerView recyclerView;
         recyclerView = findViewById(R.id.v_list);
         getData();
         setDataAdapter();
+
+        button1 = (Button) findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                opensales();
+            }
+        });
     }
+
+    private void opensales() {
+
+        Intent intent = new Intent(this,sales.class);
+        startActivity(intent);
+    }
+
     private void setDataAdapter() {
         list1AdapterClass = new List1AdapterClass(MainActivity.this,this.mData);
         recyclerView.setAdapter(list1AdapterClass);

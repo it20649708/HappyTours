@@ -34,16 +34,17 @@
 
         <TextView
             android:id="@+id/text1"
-            android:layout_width="117dp"
-            android:layout_height="36dp"
+            android:layout_width="94dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="36dp"
             android:layout_marginBottom="16dp"
-            android:text="Safari"
+            android:text="@string/safari"
             android:textColor="@color/black"
             android:textSize="26sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="233dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
