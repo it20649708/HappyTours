@@ -5,9 +5,7 @@ public class Food {
 
     public Food() {}
 
-    public String getFoodname() {
-        return foodname;
-    }
+    public String getFoodname() { return foodname; }
 
     public void setFoodname(String foodname) {
         this.foodname = foodname;

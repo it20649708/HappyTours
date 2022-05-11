@@ -1,12 +1,13 @@
 package com.example.happytours;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,6 +27,15 @@ public class FoodList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_list);
+
+        Button bview = (Button) findViewById(R.id.orderviewbutton);
+        bview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent launch=new Intent(FoodList.this,ViewOrders.class);
+                startActivity(launch);
+            }
+        });
 
         list=findViewById(R.id.foodlistview);
         foodList=new ArrayList<>();
@@ -50,7 +60,6 @@ public class FoodList extends AppCompatActivity {
 
             }
         });
-
 
     }
 }

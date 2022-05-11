@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:padding="15dp"
-    android:id="@+id/parentview">
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="15dp">
         <TextView
-            android:id="@+id/foodname"
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:shadowColor="@color/black"
@@ -35,12 +32,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="15dp">
+
         <TextView
             android:id="@+id/orderqty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:shadowColor="@color/black"
-            android:text="@string/rupee"
+            android:text="@string/orderqnty"
             android:textColor="@color/black"
             android:textSize="25sp" />
         <TextView
@@ -63,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:shadowColor="@color/black"
-            android:text="@string/tvportion"
+            android:text="@string/ordertotalval"
             android:textColor="@color/black"
             android:textSize="25sp" />
         <TextView
@@ -75,57 +73,4 @@
             android:text="@string/tvname"
             android:textSize="25sp"
             android:layout_marginStart="5dp"/></LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="15dp">
-        <TextView
-            android:id="@+id/tvshopvalue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:shadowColor="@color/black"
-            android:text="@string/tvShop"
-            android:textColor="@color/black"
-            android:textSize="25sp" />
-        <TextView
-            android:id="@+id/tvshop"
-            android:layout_width="wrap_content"
-            android:textColor="@color/black"
-            android:shadowColor="@color/black"
-            android:layout_height="wrap_content"
-            android:text="@string/tvname"
-            android:textSize="25sp"
-            android:layout_marginStart="5dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/orderline"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="15dp">
-
-        <EditText
-            android:id="@+id/etqty"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
-            android:autofillHints=""
-            android:hint="@string/orderqty"
-            android:inputType="number"
-            android:minHeight="48dp"
-            android:textColor="@color/black"
-            android:textColorHint="#757575"
-            android:textSize="15sp" />
-
-        <Button
-            android:id="@+id/buttonord"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/addcart" />
-
-    </LinearLayout>
-
 </LinearLayout>
