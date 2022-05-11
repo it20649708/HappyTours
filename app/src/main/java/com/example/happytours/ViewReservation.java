@@ -39,8 +39,10 @@ public class ViewReservation extends AppCompatActivity {
                 for(DataSnapshot ds:snapshot.getChildren())
                 {
                     vehicle vehicles= ds.getValue(vehicle.class);
-                   String name = vehicles.getName();
-                   String nic =  vehicles.getNic();
+                    assert vehicles != null;
+                    String name;
+                    name = vehicles.getName();
+                    String nic =  vehicles.getNic();
                    Integer quentity= vehicles.getQuentity();
                    Integer noOfDays  = vehicles.getDays();
 

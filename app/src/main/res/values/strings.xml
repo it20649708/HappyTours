@@ -44,16 +44,4 @@
     <string name="portionname">"Portion : "</string>
     <string name="btn_order">Order Now</string>
     <string name="Txt1">Find The Best Food Around You</string>
-    <string name="orderqty">Enter Quantity</string>
-    <string name="addcart">Add Cart</string>
-    <string name="orderqnty">Quantity</string>
-    <string name="ordertotalval">Total</string>
-    <string name="ovbutton">View Your Orders</string>
-    <string name="OrderViewNameHeading">My Orders</string>
-    <string name="buttonrentbt">Rent A Vehicle</string>
-    <string name="txttopic">HAPPY TOURS</string>
-    <string name="buttonrent">Rent a vehicle</string>
-    <string name="buttonhotel">Book a hotel</string>
-    <string name="buttonfood">Order food</string>
-    <string name="paynowbutton">Pay Now</string>
 </resources>

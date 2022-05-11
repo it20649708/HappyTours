@@ -7,7 +7,7 @@ public class modelClass {
     String phone;
     String name;
 
-    public modelClass(int photo,String city,String phone, String name) {
+    public modelClass(int photo, String city, String phone, String name) {
         this.photo = photo;
         this.city = city;
         this.phone = phone;
